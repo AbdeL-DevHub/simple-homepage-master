@@ -14,7 +14,7 @@ body {
     font-family: var(--font-main);
     margin:0;
     padding:0;
-    background-color:f2f9ff;
+    background-color:#f2f9ff;
     max-width:80%;
     margin-inline:  auto;
 }
@@ -43,13 +43,20 @@ nav > img {
     margin-inline: auto;
     border-radius: var(--spacing-small);
     margin-block:0;
+    margin-inline-start:0;
+    padding-inline-start:0;
+}
+
+nav .logo {
+    margin-inline-end:auto;
+    padding-inline-start:0;
 }
 
 
 
 li > a {
     text-decoration: none;
-    color: hsl(from var(--color-main)h 50% l);
+    color: black;
     font-weight:600;
     display: block;
     transition: all 0.2s ease-in-out;
@@ -57,11 +64,13 @@ li > a {
 
 a:not(.demo, .start){
    border-bottom: 2px solid transparent;
+   transition: all 0.2s ease-in-out;
 }
 
 
 a:not(.demo, .start):hover{
    border-bottom-color: hsl(var(--color-sec)h s l);
+   color:#243fa8;
 }
 
 
@@ -103,16 +112,17 @@ a:not(.demo, .start):hover{
 }
 
 .content h1 {
-    font-size:4rem;
+    font-size:4.5rem;
     width: 10ch;
     margin-top:0.7rem;
-    color: hsl(240 15% 25%);
+    color: hsl(240, 15%, 17%);
 }
 
 .content p:nth-of-type(2){
     font-size:1.3rem;
     width: 50ch;
-    color: hsl(240 15% 20%);
+    color: hsl(240, 15%, 14%);
+    font-weight:500;
 
 
 }
@@ -149,7 +159,8 @@ a:not(.demo, .start):hover{
 
 .spans{
     padding-block: 2rem;
-    font-size:0.9rem;
+    font-size:1rem;
+    font-weight: 500;
 } 
 
 .spans span:nth-child(2){
